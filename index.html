@@ -17,6 +17,22 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          conceptscard: '#E7C1D3',
+          prosescard: '#EFDA6E',
+          Supervisioncard:'#A4DAC3',
+          Budgetcard:'#77AAEA',
+        }
+      }
+    }
+  }
+</script>
+
 <style>
     .manrope-font{
         font-family: "Manrope", sans-serif;
@@ -25,7 +41,7 @@
 
 </head>
 <body>
-    <header class="md:container mx:auto">
+    <header class="md:container  mx-auto ">
         <!-- navber -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -79,7 +95,105 @@
               </ul>
             </div>
           </div>
+          <!-- banner style -->
+          <section>
+            <div class="hero min-h-screen">
+              <div class="hero-content text-center">
+                <div class="max-w-4xl">
+                  <!-- img  -->
+                  <img src="./assets/banner.png" alt="">
+                  <!-- text -->
+                  <h1 class="text-4xl font-bold">A barn house of this design has a <br> striking appearance </h1>
+                  <p class="py-6">
+                    Every home should have something natural in it like living plants, flawers,natural wood or stone, or even branches or driftwood. When these things delight our senses on a daily basis it helps to grornd us and revew our energy.
+                  </p>
+                  <button class="btn bg-lime-200 rounded-full">View Details <i class="fa-solid fa-arrow-right -rotate-45 w-[28px] h-[28px] bg-lime-400 rounded-full flex justify-center items-center"></i></button>
+                </div>
+              </div>
+            </div>
+          </section>
     </header>
+    <main class="md:container mx-auto">
+      <!-- design section  -->
+      <section>
+        <div class="hero bg-base-200 ">
+          <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+            <img src="./assets/Rectangle.png"
+              class="max-w-sm rounded-lg shadow-2xl" />
+              <!-- text section  -->
+            <div class="mr-20">
+              <img class="border-dashed border-2 border-gray-400 p-2" src="assets/Vector.png" alt="">
+              <h1 class="text-4xl font-bold">We design thoughtful,<br> liveable spaces</h1>
+              <p class="text-sm py-6">
+                The barn house captivates with its blend of rustic charm and <br> modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+              <!-- card1 -->
+              <div class="card card-side bg-base-100 shadow-xl mb-3 pl-5">
+                <figure>
+                  <img
+                    src="assets/commercial.png" alt="" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold text-base">Commercial</h2>
+                  <p class="text-sm">commercial buildings are buildings where <br> commercial activities take place.</p>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class="card card-side bg-base-100 shadow-xl pl-5">
+                <figure>
+                  <img
+                    src="assets/residential.png" alt="" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold text-base">Residential</h2>
+                  <p class="text-sm">commercial buildings are buildings where <br> commercial activities take place.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- work process section -->
+      <section>
+        <div class="hero bg-base-200 min-h-full">
+          <div class="hero-content text-center">
+            <div class="max-w-2xl">
+              <button class="btn bg-white text-xs rounded-full py-0 "><i class="fa-solid fa-arrow-right"></i> How we works</button>
+              <h1 class="text-4xl font-bold">Our Works Process</h1>
+              <p class="py-6 text-xs">Commercial buildings are buildings where commercial activities take place. Commercial buildings include office buildings, retail spaces, ware houses and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 justify-center">
+        <!-- card1 -->
+        <div class="bg-conceptscard w-[90%] lg:w-[250px] h-[170px] p-5 rounded-2xl space-y-2">
+          <img src="assets/concept.png" alt="">
+          <h2 class="font-bold text-xs w-1/4">Concept</h2>
+          <p class="text-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+        <!-- card 2 -->
+        <div class="bg-prosescard w-[90%] lg:w-[250px] h-[170px] p-5 rounded-2xl space-y-2">
+          <img src="assets/flow-chart.png" alt="">
+          <h2 class="font-bold text-xs ">Design Process</h2>
+          <p class="text-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+        <!-- card 3 -->
+        <div class="bg-Supervisioncard w-[90%] lg:w-[250px] h-[170px] p-5 rounded-2xl space-y-2">
+          <img src="assets/vision.png" alt="">
+          <h2 class="font-bold text-xs">Supervision</h2>
+          <p class="text-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+        <!-- card 4 -->
+        <div class="bg-Budgetcard w-[90%] lg:w-[250px] h-[170px] p-5 rounded-2xl space-y-2">
+          <img src="assets/budget-planning.png" alt="">
+          <h2 class="font-bold text-xs">Budget Planning</h2>
+          <p class="text-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+      </div>
+      </section>
+      
+    </main>
+
     
 </body>
 </html>
