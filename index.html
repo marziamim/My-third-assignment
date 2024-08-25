@@ -27,6 +27,7 @@
           prosescard: '#EFDA6E',
           Supervisioncard:'#A4DAC3',
           Budgetcard:'#77AAEA',
+          bgdiscuss: '#FFFFFF',
         }
       }
     }
@@ -101,7 +102,7 @@
               <div class="hero-content text-center">
                 <div class="max-w-4xl">
                   <!-- img  -->
-                  <img src="./assets/banner.png" alt="">
+                  <img src="./assets/banner.png" class="mx-auto" alt="">
                   <!-- text -->
                   <h1 class="text-4xl font-bold">A barn house of this design has a <br> striking appearance </h1>
                   <p class="py-6">
@@ -154,8 +155,8 @@
         </div>
       </section>
       <!-- work process section -->
-      <section>
-        <div class="hero bg-base-200 min-h-full">
+      <section class="bg-base-200">
+        <div class="hero min-h-full">
           <div class="hero-content text-center">
             <div class="max-w-2xl">
               <button class="btn bg-white text-xs rounded-full py-0 "><i class="fa-solid fa-arrow-right"></i> How we works</button>
@@ -191,7 +192,42 @@
         </div>
       </div>
       </section>
-      
+      <!-- discuss section -->
+      <section class="bg-base-300 my-10 te">
+        <div class="hero   ">
+          <div class="hero-content text-center">
+            <div class="max-w-2xl">
+              <button class="btn bg-white text-xs rounded-full py-0 "><i class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
+              <h1 class="text-4xl font-bold">Let’s Discuss Next Project</h1>
+              <p class="pt-6 text-xs">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row ">
+            <div class="card w-full max-w-2xl ">
+              <form class="card-body">
+                <div class="form-control flex lg:flex-row gap-5 mt-3 ">
+                  <input type="name" placeholder="First Name*" class="input rounded-full w-[380px]" required />
+                  <input type="name" placeholder="Last Name*" class="input rounded-full w-[380px]" required />
+                </div>
+                <div class="form-control flex lg:flex-row gap-5 mt-3">
+                  <input type="number" placeholder="Phone Number*" class="input rounded-full w-[380px]" required />
+                  <input type="number" placeholder="Email Number*" class="input rounded-full w-[380px]" required />
+                </div>
+                <div class="form-control flex lg:flex-row gap-5 mt-3">
+                  <input type="text" placeholder="Write your message here*" class="input rounded-3xl w-[380px] lg:w-[630px] h-[150px] " required />
+                </div>
+                <div class="form-control mt-3">
+                  <button class="btn bg-lime-400 font-bold rounded-3xl">Send Mail<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white w-[28px] h-[28px] rounded-full flex justify-center items-center "></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     
